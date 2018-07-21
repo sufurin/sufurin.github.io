@@ -27,8 +27,9 @@ a{
 
 /* ここから */
 header{
-    height: 100px;
-    background-color: #222;
+    height: 42px;
+    background-color: #eef0ff;
+    border-bottom: 1px solid #7cf;
 }
 #nav-drawer{
     position: relative;
@@ -50,7 +51,7 @@ header{
     height: 2px;
     width: 100%;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: rgba(140,200,240,0.9);
     display: block;
     content: '';
     cursor: pointer;
