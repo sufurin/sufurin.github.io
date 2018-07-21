@@ -9,7 +9,7 @@ html{
 body{
     font-size: 1.2rem;
     font-family: Futura, 'Century Gothic', 游ゴシック体, YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 游ゴシック, 'Yu Gothic', メイリオ, Meiryo, sans-serif;
-    background-image: url(images/6.jpg);
+    background-image: url(6.jpg);
     background-repeat: repeat-x repeat-y;
     background-size: contain;
     background-attachment: fixed;
@@ -114,16 +114,16 @@ header{
     box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
 .background0 {
-  background-image: url(images/clank.jpg);
+  background-image: url(clank.jpg);
 }
 .background1 {
-  background-image: url(images/4nzu.jpg);
+  background-image: url(4nzu.jpg);
 }
 .background2 {
-  background-image: url(images/g2.jpg);
+  background-image: url(g2.jpg);
 }
 .background3 {
-  background-image: url(images/naka3.jpg);
+  background-image: url(naka3.jpg);
 }
 .random-visual{
     position: relative;
@@ -140,7 +140,7 @@ header{
     margin: 10vh auto;
     width: 270px;
     height: 90px;
-    background-image: url(images/logo.png);
+    background-image: url(logo.png);
     background-size: cover;
     overflow: hidden;
     text-indent: 100%;
