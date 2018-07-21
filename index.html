@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="reset.css" rel="stylesheet" type="text/css">
+        <link href="style-s.css" rel="stylesheet" media="screen and (max-width:768px)">
+        <link href="style.css" rel="stylesheet" media="screen and (min-width:769px)">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                var num = Math.floor(4 * Math.random());
+                $('div.random-visual').addClass('background' + num);
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <ul>
+                    <li class="nav-item style-s"><a href="/">×</a></li>
+                    <li class="nav-item style-s"><div class="footer-logo"><img src="images/logo.png"></div></li>
+                    <li class="nav-item"><a href="#">News</a></li>
+                    <li class="nav-item"><a href="#">OnAir</a></li>
+                    <li class="nav-item"><a href="#">Story</a></li>
+                    <li class="nav-item"><a href="#">Character</a></li>
+                    <li class="nav-item"><a href="#">Staff/Cast</a></li>
+                    <li class="nav-item"><a href="#">Special</a></li>
+                    <li class="nav-item"><a href="#">CD/Blu-ray</a></li>
+                    <li class="nav-item"><a href="https://twitter.com/share?text=MIS GAME!!&url=https://sufurin.github.io" rel="nofollow" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            </div>
+        </header>
+        <main>
+            <div class="key-visual key-visual-size random-visual">
+                <img class="catchphrase catchphrase-position" src="images/catchphrase.png">
+                <h1 class="logo logo-position">MIS GAME!!</h1>
+                <img class="onair onair-position" src="images/onair.png">
+            </div>
+            <div class="contents">
+                <div class="content event">
+                    <h2>Event</h2>
+                    <p class="date">2019.01.01</p>
+                    <p class="title">MIS GAME!! DJイベント開催!!<br>音楽に興味のある方必見です!!</p>
+                    <p class="article">4nzu（あんずちゃん役）、<br>naka3（naka3ちゃん役）出演</p>
+                    <p class="date">2018.12.31</p>
+                    <p class="title">MIS GAME!! 兄妹イベント開催!!<br>二人の私生活に迫る……!!</p>
+                    <p class="article">G2（じーつーちゃん役）、<br>Clank（くらんくちゃん役）出演</p>
+                    <a href="#"><p class="more">▶︎MORE</p></a>
+                </div><!--
+             --><div class="content news">
+                    <h2>News</h2>
+                    <p class="date">2018.07.13</p>
+                    <p class="title">13日の金曜日!!</p>
+                    <p class="date">2018.07.10</p>
+                    <p class="title">naka3ちゃん誕生日<br>特設サイト公開中!!</p>
+                    <p class="date">2018.07.07</p>
+                    <p class="title">くらんくちゃん、財布発見!!</p>
+                    <p class="date">2018.07.07</p>
+                    <p class="title">くらんくちゃん、財布紛失!!</p>
+                    <a href="#"><p class="more">▶︎MORE</p></a>
+                </div><!--
+             --><div class="content movie">
+                    <h2 class="black">Movie</h2>
+                    <div class="movie-sizing">
+                        <iframe class="youtube" src="https://www.youtube.com/embed/7Aeon9FlK2U?controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="movie-sizing">
+                        <iframe class="youtube" src="https://www.youtube.com/embed/r90NsOTvigA?controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div><!--
+             --><div class="content twitter">
+                    <h2 class="black">Twitter</h2>
+                    <div class="twitter-sizing">
+                        <a class="twitter-timeline" height="340" width="486" data-chrome="noheader nofooter transparent noborders" href="https://twitter.com/misw_info" >Tweets by misw_info</a>
+                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-logo">
+                <img src="images/logo.png">
+            </div>
+            <p>©︎MIS.W / MIS GAME!! 製作委員会</p>
+        </footer>
+    </body>
+</html>

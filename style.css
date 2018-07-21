@@ -1,0 +1,243 @@
+/* 準備 */
+@charset "utf-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.2rem;
+    font-family: Futura, 'Century Gothic', 游ゴシック体, YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 游ゴシック, 'Yu Gothic', メイリオ, Meiryo, sans-serif;
+    background-image: url(images/6.jpg);
+    background-repeat: repeat-x repeat-y;
+    background-size: contain;
+    background-attachment: fixed;
+}
+a{
+    text-decoration: none;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+    list-style: none;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ここから */
+#nav-drawer{
+    margin-top: -20px;
+}
+#nav-content{
+    padding: 40px 0 0 20px;
+}
+#nav-content .nav-item{
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    padding: 0 10px;
+    z-index: 9999;
+}
+#nav-content .nav-item:nth-of-type(n+2){
+    border-left: solid 1px #fff;
+}
+#nav-content .nav-item a{
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 20px;
+    transform: skewX(-12deg);
+    text-shadow: 3px 3px 5px #000;
+}
+#nav-content .nav-item a::before, #nav-content .nav-item a::after {
+    border-bottom: solid 2px #fff;
+    bottom: 2px;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: all .2s ease;
+    width: 0;
+}
+#nav-content .nav-item a::before {
+    left: 50%;
+}
+#nav-content .nav-item a::after {
+    right: 50%;
+}
+#nav-content .nav-item a:hover::before, #nav-content .nav-item a:hover::after {
+    width: 50%;
+}
+.key-visual{
+    position: relative;
+    z-index: 0;
+    background-image: url(images/keyvisual.jpg);
+    background-size: cover;
+    background-position: top center;
+    margin-top: -65px;
+}
+@media screen and (min-width: 769px) {
+    .key-visual-size {
+        height: 600px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .key-visual-size {
+        height: 710px;
+    }
+}
+li.style-s{
+    visibility: hidden;
+}
+.style-s div{
+    display: none;
+}
+.logo{
+    position: absolute;
+    top: 480px;
+    left: 8%;
+    width: 300px;
+    height: 99px;
+    background-image: url(images/logo.png);
+    background-size: cover;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+@media screen and (min-width: 769px) {
+    .logo-position {
+        top: 400px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .logo-position {
+        top: 480px;
+    }
+}
+.catchphrase{
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    width: 35px;
+    height: auto;
+}
+@media screen and (min-width: 769px) {
+    .catchphrase-position {
+        top: 80px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .catchphrase-position {
+        top: 150px;
+    }
+}
+.onair{
+    position: absolute;
+    right: 12%;
+    width: 200px;
+    height: auto;
+}
+@media screen and (min-width: 769px) {
+    .onair-position {
+        top: 380px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .onair-position {
+        top: 450px;
+    }
+}
+.contents .content{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-top: -30px;
+    padding: 30px 30px 50px;
+    transform: skewY(-6deg);
+    box-shadow: 5px 5px 5px #555;
+    
+}
+.event{
+    background: linear-gradient(#cf5cff, #ae19c9);
+    z-index: 4;
+}
+.news{
+    background: linear-gradient(#0193ff, #0116ff);
+    background-color: ;
+    z-index: 3;
+}
+.movie{
+    background: linear-gradient(#ffff00, #cccc00);
+    z-index: 2;
+}
+.twitter{
+    background: linear-gradient(#dfdfdf, #bebebe);
+    z-index: 1;
+}
+h2{
+    font-weight: lighter;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    transform: skewY(6deg);
+    text-shadow: 1px 1px 1px #333;
+    text-decoration: underline;
+}
+.black{
+    color: #000;
+    text-shadow: 1px 1px 1px #ccc;
+}
+p.date, p.title, p.article, p.more{
+    line-height: 25px;
+    font-size: 1.4rem;
+    color: #fff;
+    transform: skewY(6deg);    
+}
+p.date{
+    padding-top: 10px;
+    text-shadow: 1px 1px 1px #555;
+    transform: skewY(6deg);
+}
+p.more{
+    padding-top: 20px;
+    text-align: center;
+}
+.movie-sizing{
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    transform: skewY(6deg);
+}
+.movie-sizing:before {
+    content:"";
+    display: block;
+    padding-top: 56.25%; 
+}
+.youtube{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.twitter-sizing{
+    transform: skewY(6deg);
+}
+footer{
+    margin: 50px 0 30px;
+    height: 150px;
+}
+.footer-logo{
+    text-align: center;
+}
+.footer-logo img{
+    width: 300px;
+    height: 99px;
+}
+footer p{
+    text-align: center;
+    color: #000;
+    line-height: 60px;
+}
